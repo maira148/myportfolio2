@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maira - Virtual Assistant Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9fafc;
+            color: #333;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.8rem;
+            margin: 0;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        nav a {
+            padding: 15px 25px;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        nav a:hover {
+            color: #2575fc;
+        }
+        
+        section {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #2575fc;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 10px;
+        }
+        
+        .skills-list,
+        .experience,
+        .case-studies {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        footer {
+            background: #2575fc;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        .cta {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #6a11cb;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .cta:hover {
+            background: #4a0ca3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Tech-Savvy Virtual Assistant</h1>
+        <p>I help founders with executive support, data insights, and automation</p>
+        <a href="mailto:mairazzzz120@gmail.com" class="cta">Hire Me</a>
+        <a href="AA.pdf" class="cta">Download CV</a>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#cases">Case Studies</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I’m Maira — a Virtual Assistant and data professional with 4 years of hands-on experience at M5 and 3+ years of part-time VA work. I deliver reliable support plus advanced capabilities: Python data analysis, SQL, dashboards, and automation. I
+            thrive at the intersection of operations and technology.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <div class="card">
+                <h3>Virtual Assistant</h3>
+                <p>Inbox, calendar, travel booking, client communication</p>
+            </div>
+            <div class="card">
+                <h3>Social Media</h3>
+                <p>Content scheduling, Canva design, engagement tracking</p>
+            </div>
+            <div class="card">
+                <h3>Data & Reporting</h3>
+                <p>Python, SQL, dashboards, predictive modeling</p>
+            </div>
+            <div class="card">
+                <h3>Tech & Tools</h3>
+                <p>Notion, Asana, Slack, Zapier, AWS basics, Docker</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience">
+            <div class="card">
+                <h3>M5 — Data Analyst & Operations Specialist</h3>
+                <p><em>Jan 2020 – Dec 2023 (4 years)</em></p>
+                <ul>
+                    <li>Led data projects with Python & SQL</li>
+                    <li>Built automated reporting pipelines</li>
+                    <li>Implemented ML forecasting models</li>
+                    <li>Coordinated cross-functional data initiatives</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Freelance / Part-time Virtual Assistant</h3>
+                <p><em>2019 – Present (3+ years)</em></p>
+                <ul>
+                    <li>Inbox & calendar management</li>
+                    <li>Social media scheduling & analytics</li>
+                    <li>CRM setups, automations, dashboards</li>
+                    <li>Supported founders & startups remotely</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="cases">
+        <h2>Case Studies</h2>
+        <div class="case-studies">
+            <div class="card">
+                <h3>Automated Weekly Reporting</h3>
+                <p>Reduced 6 hours of work to 15 minutes via Python & Zapier automation.</p>
+            </div>
+            <div class="card">
+                <h3>Social Media Ops & Analytics</h3>
+                <p>Built editorial calendar, boosted engagement by 20% with scheduling & analytics.</p>
+            </div>
+            <div class="card">
+                <h3>Inventory Forecasting</h3>
+                <p>Cleaned sales data, built ML forecast, reduced stockouts by 40%.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:mairazzzz120@gmail.com">mairazzzz120@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/mayra-m-198b58241/" target="_blank">View Profile</a></p>
+    </footer>
+
+</body>
+
+</html>

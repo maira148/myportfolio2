@@ -4,109 +4,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maira - Virtual Assistant Portfolio</title>
+    <title>Maira | Data & Automation Engineer</title>
     <style>
-        body {
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f9fafc;
+            background: #f8fafc;
             color: #333;
+            line-height: 1.6;
         }
         
         header {
-            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            background: linear-gradient(135deg, #007bff, #6f42c1);
             color: white;
-            padding: 60px 20px;
             text-align: center;
+            padding: 90px 20px;
         }
         
         header h1 {
-            font-size: 2.8rem;
-            margin: 0;
+            font-size: 3rem;
+            margin-bottom: 10px;
         }
         
         header p {
-            font-size: 1.2rem;
-            margin-top: 10px;
+            font-size: 1.3rem;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+        
+        .cta {
+            display: inline-block;
+            background: white;
+            color: #007bff;
+            padding: 12px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px;
+            transition: 0.3s;
+        }
+        
+        .cta:hover {
+            background: #f0f0f0;
         }
         
         nav {
-            display: flex;
-            justify-content: center;
-            background: #ffffff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background: white;
+            text-align: center;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
         }
         
         nav a {
-            padding: 15px 25px;
             color: #333;
             text-decoration: none;
-            font-weight: bold;
+            margin: 0 20px;
+            font-weight: 600;
         }
         
         nav a:hover {
-            color: #2575fc;
+            color: #007bff;
         }
         
         section {
-            max-width: 1000px;
-            margin: 50px auto;
-            padding: 20px;
+            max-width: 1100px;
+            margin: 60px auto;
+            padding: 0 20px;
         }
         
         section h2 {
             font-size: 2rem;
-            margin-bottom: 20px;
-            color: #2575fc;
-            border-bottom: 2px solid #eaeaea;
+            color: #007bff;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #eee;
             padding-bottom: 10px;
         }
         
-        .skills-list,
-        .experience,
-        .case-studies {
+        .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
         }
         
         .card {
-            background: #fff;
+            background: white;
             border-radius: 10px;
-            padding: 20px;
+            padding: 25px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            transition: 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+        }
+        
+        ul {
+            margin-left: 20px;
         }
         
         footer {
-            background: #2575fc;
+            background: #0d6efd;
             color: white;
             text-align: center;
-            padding: 30px 20px;
+            padding: 40px 20px;
+            margin-top: 50px;
         }
         
         footer a {
             color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        
-        footer a:hover {
             text-decoration: underline;
-        }
-        
-        .cta {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 12px 25px;
-            background: #6a11cb;
-            color: white;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        
-        .cta:hover {
-            background: #4a0ca3;
         }
     </style>
 </head>
@@ -114,88 +126,89 @@
 <body>
 
     <header>
-        <h1>Tech-Savvy Virtual Assistant</h1>
-        <p>I help founders with executive support, data insights, and automation</p>
-        <a href="mailto:mairazzzz120@gmail.com" class="cta">Hire Me</a>
+        <h1>Maira — Data & Automation Engineer</h1>
+        <p>I design and build intelligent systems that automate workflows, manage backend data, and deliver real-time insights.</p>
+        <a href="mailto:mairazzzz120@gmail.com" class="cta">Contact Me</a>
         <a href="AA.pdf" class="cta">Download CV</a>
     </header>
 
     <nav>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#cases">Case Studies</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>I’m Maira — a Virtual Assistant and data professional with 4 years of hands-on experience at M5 and 3+ years of part-time VA work. I deliver reliable support plus advanced capabilities: Python data analysis, SQL, dashboards, and automation. I
-            thrive at the intersection of operations and technology.</p>
+        <p>I’m Maira — a tech-driven professional specializing in data systems, backend logic, and automation. I bridge data analysis, cloud, and product workflows to create smart, self-running systems that help businesses scale. I’ve worked across Python,
+            SQL, Streamlit, AWS, Docker, Terraform, and Jenkins, turning manual reporting into automated insights and backend processes into smooth digital tools.</p>
     </section>
 
     <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-list">
+        <h2>Core Skills</h2>
+        <div class="grid">
             <div class="card">
-                <h3>Virtual Assistant</h3>
-                <p>Inbox, calendar, travel booking, client communication</p>
-            </div>
-            <div class="card">
-                <h3>Social Media</h3>
-                <p>Content scheduling, Canva design, engagement tracking</p>
-            </div>
-            <div class="card">
-                <h3>Data & Reporting</h3>
-                <p>Python, SQL, dashboards, predictive modeling</p>
-            </div>
-            <div class="card">
-                <h3>Tech & Tools</h3>
-                <p>Notion, Asana, Slack, Zapier, AWS , Docker, Terraform, jenkins, Grafana, kubernetes</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="experience">
-            <div class="card">
-                <h3>M5 — Data Analyst & Product manager</h3>
-                <p><em>Jan 2020 – Dec 2023 (4 years)</em></p>
+                <h3>Data Engineering</h3>
                 <ul>
-                    <li>Led data projects with Python & SQL</li>
-                    <li>Built automated reporting pipelines</li>
-                    <li>Implemented ML forecasting models</li>
-                    <li>Coordinated cross-functional data initiatives</li>
+                    <li>Python (Pandas, NumPy)</li>
+                    <li>SQL & Database Design</li>
+                    <li>Data Cleaning & ETL</li>
+                    <li>Streamlit Dashboards</li>
                 </ul>
             </div>
             <div class="card">
-                <h3>Freelance / Part-time Virtual Assistant</h3>
-                <p><em>2019 – Present (3+ years)</em></p>
+                <h3>Backend & Cloud</h3>
                 <ul>
-                    <li>Inbox & calendar management</li>
-                    <li>Social media scheduling & analytics</li>
-                    <li>CRM setups, automations, dashboards</li>
-                    <li>Supported founders & startups remotely</li>
+                    <li>AWS (S3, Lambda, EC2)</li>
+                    <li>Docker & Terraform</li>
+                    <li>API Integration</li>
+                    <li>Authentication & Databases</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Automation & AI</h3>
+                <ul>
+                    <li>Zapier, Python Scripts</li>
+                    <li>Automated Workflows</li>
+                    <li>AI Summaries & Reports</li>
+                    <li>OpenAI API Integration</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Product & Ops</h3>
+                <ul>
+                    <li>Glide App Design</li>
+                    <li>Project Management</li>
+                    <li>System Architecture Mapping</li>
+                    <li>Cross-functional Collaboration</li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <section id="cases">
+    <section id="projects">
         <h2>Case Studies</h2>
-        <div class="case-studies">
+        <div class="grid">
             <div class="card">
-                <h3>Automated Weekly Reporting</h3>
-                <p>Reduced 6 hours of work to 15 minutes via Python & Zapier automation.</p>
+                <h3>Automated Reporting System</h3>
+                <p>Reduced weekly reporting time from 6 hours to 15 minutes by creating a Python pipeline that automatically collected, cleaned, and summarized data, emailing visual dashboards via Streamlit + SMTP.</p>
+                <p><strong>Tools:</strong> Python, Streamlit, SQL, Zapier</p>
             </div>
             <div class="card">
-                <h3>Social Media Ops & Analytics</h3>
-                <p>Built editorial calendar, boosted engagement by 20% with scheduling & analytics.</p>
+                <h3>Sales Forecast Dashboard</h3>
+                <p>Developed a predictive dashboard for sales data using time-series forecasting models (ARIMA/XGBoost), helping reduce stockouts by 40%.</p>
+                <p><strong>Tools:</strong> Python, Pandas, Matplotlib, SQL</p>
             </div>
             <div class="card">
-                <h3>Inventory Forecasting</h3>
-                <p>Cleaned sales data, built ML forecast, reduced stockouts by 40%.</p>
+                <h3>Cloud Automation Pipeline</h3>
+                <p>Built a CI/CD pipeline using Docker and Jenkins to deploy containerized dashboards to AWS, fully automating the update process for new data releases.</p>
+                <p><strong>Tools:</strong> Docker, Jenkins, AWS EC2</p>
+            </div>
+            <div class="card">
+                <h3>Client Portal & Analytics App</h3>
+                <p>Created a secure client portal with database backend and integrated AI-powered analytics summary generation for each uploaded dataset.</p>
+                <p><strong>Tools:</strong> Streamlit, SQL, OpenAI API</p>
             </div>
         </div>
     </section>
@@ -204,6 +217,7 @@
         <h2>Contact</h2>
         <p>Email: <a href="mailto:mairazzzz120@gmail.com">mairazzzz120@gmail.com</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/mayra-m-198b58241/" target="_blank">View Profile</a></p>
+        <p>© 2025 Maira — Data & Automation Engineer</p>
     </footer>
 
 </body>

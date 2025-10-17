@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maira M | Data & Cloud Consultant</title>
+    <title>Maira | Data & Cloud Consultant</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -97,6 +97,38 @@
         footer a:hover {
             text-decoration: underline;
         }
+        /* Backend / Tech Stack Section Styling */
+        
+        .project-tech {
+            background: #f9fafb;
+            border-radius: 10px;
+            padding: 15px 18px;
+            margin-top: 15px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease-in-out;
+        }
+        
+        .project-tech:hover {
+            transform: translateY(-3px);
+        }
+        
+        .project-tech h4 {
+            font-size: 1rem;
+            color: #003366;
+            margin-bottom: 8px;
+        }
+        
+        .project-tech ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .project-tech li {
+            margin-bottom: 6px;
+            color: #444;
+            font-size: 0.95rem;
+        }
         
         @media (max-width: 600px) {
             header h1 {
@@ -108,7 +140,7 @@
 
 <body>
     <header>
-        <h1>Maira | Data Analyst ,Automation, Cloud Consultant</h1>
+        <h1>Maira | Data Analyst, Automation & Cloud Consultant</h1>
         <p>Helping businesses automate, analyze, and scale with smart data & cloud solutions</p>
     </header>
 
@@ -173,19 +205,53 @@
     <section id="projects">
         <h2>Portfolio Projects</h2>
         <div class="grid">
+            <!-- Project 1 -->
             <div class="card">
                 <h3>Automated Data Dashboard</h3>
                 <p>Created an AI-powered Streamlit app that converts uploaded CSVs into interactive dashboards with data summaries and insights.</p>
+
+                <div class="project-tech">
+                    <h4>⚙️ Tech Stack & Backend Process</h4>
+                    <ul>
+                        <li><strong>Backend:</strong> Supabase (PostgreSQL) for secure data storage and management</li>
+                        <li><strong>Automation:</strong> Python (Pandas, Streamlit) handles CSV uploads and real-time data transformation</li>
+                        <li><strong>Database Logic:</strong> SQL triggers and UUIDs ensure each record remains unique</li>
+                        <li><strong>Integration:</strong> Streamlit frontend fetches processed data through Supabase REST APIs</li>
+                        <li><strong>Outcome:</strong> Fully automated dashboard creation and consistent data tracking</li>
+                    </ul>
+                </div>
             </div>
 
+            <!-- Project 2 -->
             <div class="card">
                 <h3>Cloud Monitoring Stack</h3>
                 <p>Set up a monitoring solution using Prometheus and Grafana integrated with Kubernetes clusters to visualize system health and metrics.</p>
+
+                <div class="project-tech">
+                    <h4>⚙️ Tech Stack</h4>
+                    <ul>
+                        <li>AWS EC2, Docker, Kubernetes</li>
+                        <li>Prometheus for metrics collection</li>
+                        <li>Grafana for visualization dashboards</li>
+                        <li>Terraform for infrastructure provisioning</li>
+                    </ul>
+                </div>
             </div>
 
+            <!-- Project 3 -->
             <div class="card">
                 <h3>Glide App for Client Operations</h3>
                 <p>Built a no-code Glide app for client data management and automated task tracking for small businesses.</p>
+
+                <div class="project-tech">
+                    <h4>⚙️ Tech Stack</h4>
+                    <ul>
+                        <li>Glide (no-code platform)</li>
+                        <li>Google Sheets as database backend</li>
+                        <li>Zapier for workflow automation</li>
+                        <li>Integrated AI-generated task summaries</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -221,13 +287,14 @@
     <section id="contact">
         <h2>Let’s Connect</h2>
         <p style="text-align:center;">
-            I’m always open to collaborating on data-driven or cloud-based projects. Let’s connect on <a href="https://www.linkedin.com/in/maira-maira" target="_blank">LinkedIn</a> or email me at
-            <a href="mailto:">mairazzzz120@gmail.com </a>.
+            I’m always open to collaborating on data-driven or cloud-based projects. Let’s connect on
+            <a href="https://www.linkedin.com/in/maira-maira" target="_blank">LinkedIn</a> or email me at
+            <a href="mailto:mairazzzz120@gmail.com">mairazzzz120@gmail.com</a>.
         </p>
     </section>
 
     <footer>
-        <p>© 2025 Maira M. | Built with 💙 using HTML & CSS | <a href="#top">Back to top</a></p>
+        <p>© 2025 Maira | Built with 💙 using HTML & CSS | <a href="#top">Back to top</a></p>
     </footer>
 </body>
 
